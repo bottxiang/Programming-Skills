@@ -6,7 +6,7 @@ import java.util.List;
 
 class Solution {
 
-    public List<List<Integer>> permuteUnique(int[] nums) {
+    public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<List<Integer>>();
         Arrays.sort(nums);
         boolean[] visited = new boolean[nums.length];
@@ -35,6 +35,6 @@ class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] nums = {1, 1, 3};
-        System.out.println(solution.permuteUnique(nums));
+        System.out.println(solution.permute(nums));
     }
 }
